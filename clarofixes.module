@@ -1,0 +1,28 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+* Implements hook_form_BASE_FORM_ID_alter() for \Drupal\node\NodeForm.
+*
+* Adds style overrides for claro/node-form.
+*/
+function clarofixes_form_node_form_alter(&$form, FormStateInterface $form_state) {
+  $form['#attached']['library'][] = 'clarofixes/claro-node-form-overrides';
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for \Drupal\node\NodeForm.
+ *
+ * Adds style overrides for content browser.
+ */
+function clarofixes_form_alter(&$form, FormStateInterface $form_state) {
+  $forms = [
+    'paragraph-wrapper-entity-edit-form',
+    'node-page-edit-form'
+  ];
+
+  if(in_array($form['#id'], $forms)) {
+    $form['#attached']['library'][] = 'clarofixes/entity-reference-overrides';
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "flowconcept/clarofixes",
+    "description": "Drupal 9+ CSS injection, to bring the Claro admin Theme from \"Mobile Only\" to \"Also usable on desktop\"",
+    "type": "drupal-module",
+    "require": {
+        "drupal/core": "^9 || ^10"
+    },
+    "license": "UNLICENCED",
+    "authors": [
+        {
+            "name": "Andreas Schönefeldt",
+            "email": "schoenefeldt.andreas@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,17 @@
+.field--widget-entity-browser-entity-reference .entities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.field--widget-entity-browser-entity-reference .entities-list .item-container {
+  padding: 2px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.field--widget-entity-browser-entity-reference .entities-list .item-container article {
+  flex: 1;
+}

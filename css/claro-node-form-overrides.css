@@ -1,0 +1,60 @@
+/*
+  Overrides Claro layout for node form.
+  @see https://www.drupal.org/project/drupal/issues/3184667
+*/
+
+@media screen and (min-width: 61rem) {
+  .layout-node-form {
+    display: flex!important;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .layout-region--node-main,
+  .layout-region--node-footer {
+    width: 65% !important;
+    flex-basis: 65%;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+
+  .layout-region--node-main .layout-region__content,
+  .layout-region--node-footer .layout-region__content {
+    max-width: 100% !important;
+    flex-basis: 100%;
+  }
+
+  .layout-region--node-secondary {
+    width: 30% !important;
+    flex-basis: 30%;
+  }
+
+}
+
+.field--widget-classier-paragraphs-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.field--widget-classier-paragraphs-form .fieldset--group {
+  flex-grow: 1;
+  padding: 1rem;
+  border: 1px solid #c9c9c9;
+  background-color: #ebebed;
+  border-radius: .5rem 1rem;
+}
+.field--widget-classier-paragraphs-form .fieldset--group .form-radios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 575px) {
+  .field--widget-classier-paragraphs-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+

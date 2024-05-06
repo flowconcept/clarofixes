@@ -1,0 +1,5 @@
+name: 'clarofixes'
+type: module
+description: 'Style-Fixes for the Claro-Theme'
+core_version_requirement: ^9 || ^10
+package: 'Site'
