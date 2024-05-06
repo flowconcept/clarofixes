@@ -27,7 +27,23 @@
   .layout-region--node-secondary {
     width: 30% !important;
     flex-basis: 30%;
+    margin-top: 1rem;
   }
+
+  .form-row {
+    display: flex;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+    flex-wrap: wrap;
+  }
+
+  .form-row > .form-wrapper {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    max-width: calc(50% - 1rem);
+  }
+
+
 
 }
 
