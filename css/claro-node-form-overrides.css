@@ -43,8 +43,6 @@
     max-width: calc(50% - 1rem);
   }
 
-
-
 }
 
 .field--widget-classier-paragraphs-form {
@@ -65,6 +63,10 @@
   flex-wrap: wrap;
   gap: .5rem;
   justify-content: flex-start;
+}
+
+.js .vertical-tabs .vertical-tabs__item {
+  overflow-y: visible!important;
 }
 
 @media screen and (max-width: 575px) {
